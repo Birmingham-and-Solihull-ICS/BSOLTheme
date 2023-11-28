@@ -1,0 +1,26 @@
+destination: docs
+
+url: https://Birmingham-and-Solihull-ICS.github.io/BSOLTheme
+
+navbar:
+  type: default
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/Birmingham-and-Solihull-ICS
+
+authors:
+  Chris Mainey:
+    href: https://github.com/chrismainey
+  Birmingham and Solihull ICB:
+    href: https://birminghamsolihull.icb.nhs.uk/
+  Tom Jemmett:
+    href: https://github.com/tomjemmett
+  The Strategy Unit:
+    href: https://www.strategyunitwm.nhs.uk/
+
+twitter:
+     icon: fa-lg fa-twitter
+     href: https://twitter.com/NHSBSol
+
+development:
+  mode: auto
