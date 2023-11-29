@@ -8,9 +8,9 @@
 #' colours that are required can be passed as strings to the function, and only
 #' those colours will be returned.
 #'
-#' If a "pallete" is selected then no arguments should be passed to ...
+#' If a "palette" is selected then no arguments should be passed to ...
 #'
-#' Only one palete can be selected at a time.
+#' Only one palette can be selected at a time.
 #'
 #' @param ... individual colours that you wish to get the values of
 #' @param palette a name of a palette to select the colours of
@@ -24,7 +24,7 @@
 #' # or, just show some colours
 #' bsol_theme_cols("green", "orange", "deep_navy", "nhs_blue")
 #' # or, select a single palette
-#' bsol_theme_cols(palette = "slates")
+#' bsol_theme_cols(palette = "ics_orange")
 bsol_theme_cols <- function(...,
                           palette = c(
                             NA,

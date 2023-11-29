@@ -11,7 +11,8 @@ bsol_theme_colours <- c(
 
   nhs_blue = "#005EB8",
   light_slate = "#b2b7b9",
-  charcoal = "#2c2825"
+  charcoal = "#2c2825",
+  white = "#ffffff"
 )
 
 test_that("when no arguments all of the colours are returned", {
@@ -56,3 +57,4 @@ test_that("an error occurs when an invalid palette is passed", {
 test_that("an error occurs if a palette is specified as well as colours", {
   expect_error(bsol_theme_cols("orange", palette = "main"))
 })
+

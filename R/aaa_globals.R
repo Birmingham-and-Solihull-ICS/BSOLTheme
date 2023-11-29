@@ -14,7 +14,8 @@ bsol_theme_colours <- c(
 
   nhs_blue = "#005EB8",
   light_slate = "#b2b7b9",
-  charcoal = "#2c2825"
+  charcoal = "#2c2825",
+  white= "#ffffff"
   #light_charcoal = "#9d928a",
   #light_slate = "#b2b7b9",
   #light_blue = "#abc0e0",

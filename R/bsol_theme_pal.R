@@ -11,11 +11,11 @@
 #' @export
 #'
 #' @examples
-#' bsol_theme_pal()
+#' bsol_theme_pal("main")
 #' # or, specify a palette
-#' bsol_theme_pal("oranges")
+#' bsol_theme_pal("ics_orange")
 #' # a reverse palette
-#' bsol_theme_pal("slates", TRUE)
+#' bsol_theme_pal("main", TRUE)
 bsol_theme_pal <- function(palette = c(
                         "main",
                         "alternative",

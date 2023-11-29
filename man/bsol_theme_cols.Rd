@@ -28,9 +28,9 @@ returned. If only specific colours are required, then the names of the
 colours that are required can be passed as strings to the function, and only
 those colours will be returned.
 
-If a "pallete" is selected then no arguments should be passed to ...
+If a "palette" is selected then no arguments should be passed to ...
 
-Only one palete can be selected at a time.
+Only one palette can be selected at a time.
 }
 \examples{
 # show all of the colours
@@ -38,5 +38,5 @@ bsol_theme_cols()
 # or, just show some colours
 bsol_theme_cols("green", "orange", "deep_navy", "nhs_blue")
 # or, select a single palette
-bsol_theme_cols(palette = "slates")
+bsol_theme_cols(palette = "ics_orange")
 }
