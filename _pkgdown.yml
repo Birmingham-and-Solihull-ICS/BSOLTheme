@@ -1,6 +1,8 @@
-destination: docs
+url: https://birmingham-and-solihull-ics.github.io/BSOLTheme/
+template:
+  bootstrap: 5
 
-url: https://Birmingham-and-Solihull-ICS.github.io/BSOLTheme
+destination: docs
 
 navbar:
   type: default
