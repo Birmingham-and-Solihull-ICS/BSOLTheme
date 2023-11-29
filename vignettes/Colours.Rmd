@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
   fig.width = 8
 )
 
-library(StrategyUnitTheme)
+library(BSOLTheme)
 library(ggplot2)
 library(tibble)
 library(forcats)
@@ -35,14 +35,14 @@ function:
 bsol_theme_cols()
 ```
 
-The `su_theme_cols` function returns a named vectored of hex-encoded RGB values
+The `bsol_theme_cols` function returns a named vectored of hex-encoded RGB values
 of colours.
 
 If you are only interested in specific colours, you can specify them as
 arguments to the function, like so:
 
 ```{r show specific colours}
-bsol_theme_cols("orange", "red", "slate", "nhs_blue")
+bsol_theme_cols("orange", "light_slate", "nhs_blue")
 ```
 
 Or, you can use one of the available palettes:
@@ -100,5 +100,5 @@ you need to set the `discrete` argument to `FALSE`.
 ```{r continous fill}
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_tile() +
-  scale_fill_bsol(discrete = FALSE, palette = "oranges", reverse = TRUE)
+  scale_fill_bsol(discrete = FALSE, palette = "ics_orange", reverse = TRUE)
 ```

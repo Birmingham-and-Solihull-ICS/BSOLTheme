@@ -1,6 +1,6 @@
-#' Convert to an Strategy Unit Word document
+#' Convert to an BSOL Word document
 #'
-#' Format for converting from R Markdown to a Strategy Unit branded MS Word
+#' Format for converting from R Markdown to a BSOL branded MS Word
 #' document.
 #'
 #' See the \href{https://rmarkdown.rstudio.com/word_document_format.html}{online
@@ -22,7 +22,7 @@
 #' library(rmarkdown)
 #'
 #' # simple invocation
-#' render("input.Rmd", su_document())
+#' render("input.Rmd", bsol_document())
 #' }
 #' @export
 su_document <- function(use_numbered_headings = FALSE,
@@ -36,20 +36,16 @@ su_document <- function(use_numbered_headings = FALSE,
                         pandoc_args = NULL) {
 
   # get the locations of resource files located within the package
-  su_template <- system.file("rmarkdown/templates/su-document",
-    ifelse(use_numbered_headings,
-      "Strategy_Unit_Template_Numbered_Headings.docx",
-      "Strategy_Unit_Template.docx"
-    ),
-    package = "StrategyUnitTheme"
+  bsol_template <- system.file("rmarkdown/templates/bsol-document", "ICS_Word_Template.docx",
+    package = "BSOLTheme"
   )
 
   # page width: A4 = 21cm, left+right margin = 2cm each, so width is 17cm
   fig_width <- 6.7 # ~17 cm
   fig_height <- 3.8 # ~16:9 aspect ratio
 
-  # Set's the base ggplot theme to the Strategy Unit Theme
-  ggplot2::theme_set(su_theme())
+  # Set's the base ggplot theme to the BSOL Theme
+  ggplot2::theme_set(bsol_theme())
 
   # call the base word_document function
   rmarkdown::word_document(

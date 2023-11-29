@@ -1,0 +1,37 @@
+---
+title: "Untitled"
+author: "Birmingham and Solihull ICS"
+output:
+  BSOLTheme::bsol_document: default
+---
+
+```{r setup, include = FALSE}
+
+library(knitr)
+library(tidyverse)
+library(BSOLTheme)
+
+# set default options
+opts_chunk$set(echo = FALSE,
+               dpi = 300,
+               dev.args = list(type = "cairo"))
+
+# if you want to use the Strategy Unit Theme colours change the variable below
+# to true
+use_bsol_theme_colours <- FALSE
+
+if (use_bsol_theme_colours) {
+  scale_fill_continuous <- partial(scale_fill_bsol, discrete = FALSE)
+  scale_fill_discrete <- partial(scale_fill_bsol, discrete = TRUE)
+  scale_colour_continuous <- partial(scale_colour_bsol, discrete = FALSE)
+  scale_colour_discrete <- partial(scale_colour_bsol, discrete = TRUE)
+
+  scale_color_continuous <- scale_colour_continuous
+  scale_color_discrete <- scale_colour_discrete
+}
+```
+
+# Overview
+
+# Analysis
+

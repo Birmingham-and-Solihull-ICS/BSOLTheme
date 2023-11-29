@@ -29,7 +29,12 @@ bsol_theme_cols <- function(...,
                           palette = c(
                             NA,
                             "main",
-                            "alternative"
+                            "alternative",
+                            "ics_blue",
+                            "ics_orange",
+                            "ics_green",
+                            "ics_purple",
+                            "ics_navy"
                           )) {
   # take the ... argument's and convert to a unique vector
   dots <- unique(c(...))
@@ -41,10 +46,10 @@ bsol_theme_cols <- function(...,
   if (is.na(pallete)) {
     # if no colour's have been specified, then select all
     if (length(dots) < 1) {
-      dots <- names(su_theme_colours)
+      dots <- names(bsol_theme_colours)
     }
     # immediately return the selected colours
-    return(su_theme_colours[dots])
+    return(bsol_theme_colours[dots])
   }
 
   # if we are selecting a palette then we shouldn't be specifying colours to
@@ -56,7 +61,7 @@ bsol_theme_cols <- function(...,
   # return the colours that are part of this palette
   # Taken from ICS branding guidelines in 'Colour Palette'
   colours <- switch(palette,
-    "main" = c( "green ", "light_blue", "orange", "deep_navy", "purple"),
+    "main" = c( "green", "light_blue", "orange", "deep_navy", "purple"),
     "alternative" = c("light_blue", "black_navy", "white"),
 
     "ics_blue" = c("light_blue", "white", "green"),

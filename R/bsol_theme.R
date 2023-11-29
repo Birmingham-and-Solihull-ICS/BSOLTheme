@@ -14,14 +14,14 @@
 #' library(BSOLTheme)
 #' ggplot(iris, aes(Sepal.Width, Sepal.Length, colour = Species)) +
 #'   geom_point() +
-#'   bsol_theme()
+#'   theme_bsol()
 #' }
-su_theme <- function(base_family = "Arial Bold") {
+theme_bsol <- function(base_family = "Arial Bold") {
   theme_classic(base_family = base_family) +
     theme(
       panel.background = element_blank(),
       panel.grid = element_blank(),
-      axis.line = element_line(colour = su_theme_cols("charcoal")),
-      strip.background = element_rect(fill = su_theme_cols("light_slate"))
+      axis.line = element_line(colour = bsol_theme_cols("charcoal")),
+      strip.background = element_rect(fill = bsol_theme_cols("light_slate"))
     )
 }

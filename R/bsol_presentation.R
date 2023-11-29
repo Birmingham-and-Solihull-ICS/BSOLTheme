@@ -1,6 +1,6 @@
-#' Convert to an Strategy Unit xaringan presentation
+#' Convert to an BSOL ICS xaringan presentation
 #'
-#' Format for converting from R Markdown to a Strategy Unit branded xaringan
+#' Format for converting from R Markdown to a Birmingham and Solihull ICS branded xaringan
 #' presentation.
 #'
 #' @param ... additional arguments to pass to [xaringan::moon_reader()]
@@ -14,15 +14,15 @@
 #' library(rmarkdown)
 #'
 #' # simple invocation
-#' render("input.Rmd", su_presentation())
+#' render("input.Rmd", bsol_presentation())
 #' }
 #' @export
-su_presentation <- function(...) {
+bsol_presentation <- function(...) {
 
   # get the locations of resource files located within the package
-  css <- system.file("rmarkdown/templates/su-presentation",
-    "su_xaringan.css",
-    package = "StrategyUnitTheme"
+  css <- system.file("rmarkdown/templates/bsol-presentation",
+    "bsol_xaringan.css",
+    package = "BSOLTheme"
   )
 
   # call the base word_document function

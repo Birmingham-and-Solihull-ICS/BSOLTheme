@@ -5,7 +5,7 @@ This repository is designed to match the internal style guidelines that
 but if you have any recommendations for improvements please feel free to
 [create an issue](https://github.com/Birmingham-and-Solihull-ICS/BSOLTheme/issues/new).
 
-For Strategy Unit team members, note that you cannot directly commit to the master branch.
+For BSOL ICB team members, note that you cannot directly commit to the main branch.
 Please create any changes on a separate branch to master. Once you are ready, create a pull
 request to merge your changes back into master. Before you create a pull request, ensure that:
 
