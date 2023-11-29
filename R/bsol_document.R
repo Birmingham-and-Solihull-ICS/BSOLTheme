@@ -7,8 +7,6 @@
 #' documentation} for additional details on using the \code{word_document}
 #' format.
 #'
-#' @param use_numbered_headings should we use numbered headings? Defaults to
-#'   false
 #' @inheritParams rmarkdown::pdf_document
 #' @inheritParams rmarkdown::html_document
 
@@ -25,7 +23,7 @@
 #' render("input.Rmd", bsol_document())
 #' }
 #' @export
-su_document <- function(use_numbered_headings = FALSE,
+bsol_document <- function(
                         toc = FALSE,
                         toc_depth = 1,
                         fig_caption = TRUE,
@@ -45,7 +43,7 @@ su_document <- function(use_numbered_headings = FALSE,
   fig_height <- 3.8 # ~16:9 aspect ratio
 
   # Set's the base ggplot theme to the BSOL Theme
-  ggplot2::theme_set(bsol_theme())
+  ggplot2::theme_set(theme_bsol())
 
   # call the base word_document function
   rmarkdown::word_document(
@@ -56,7 +54,7 @@ su_document <- function(use_numbered_headings = FALSE,
     fig_caption = fig_caption,
     df_print = df_print,
     highlight = highlight,
-    reference_docx = su_template,
+    reference_docx = bsol_template,
     keep_md = keep_md,
     md_extensions = md_extensions,
     pandoc_args = pandoc_args

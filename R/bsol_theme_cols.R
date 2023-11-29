@@ -61,14 +61,14 @@ bsol_theme_cols <- function(...,
   # return the colours that are part of this palette
   # Taken from ICS branding guidelines in 'Colour Palette'
   colours <- switch(palette,
-    "main" = c( "green", "light_blue", "orange", "deep_navy", "purple"),
+    "main" = c("green", "light_blue", "orange", "deep_navy", "purple"),
     "alternative" = c("light_blue", "black_navy", "white"),
 
     "ics_blue" = c("light_blue", "white", "green"),
     "ics_orange" = c("orange", "white", "deep_navy"),
     "ics_green" = c("green", "purple", "deep_navy"),
-    "ics_purple" = c("purple", "blue", "deep_navy",
-    "ics_navy" = c("deep_navy", "white", "orange"))
+    "ics_purple" = c("purple", "blue", "deep_navy"),
+    "ics_navy" = c("deep_navy", "white", "orange")
   )
 
   # return the colours from the selected palette
