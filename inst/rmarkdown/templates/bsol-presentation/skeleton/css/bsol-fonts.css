@@ -1,0 +1,11 @@
+body {
+  font-family: "Arial Bold", "Arial", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Arial Bold", "Arial", sans-serif;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Lucia Console', monospace;
+}

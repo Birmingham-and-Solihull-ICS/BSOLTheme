@@ -1,0 +1,136 @@
+body {
+  font-family: "Arial";
+}
+
+.bsol {
+  background-color: #FFFFFF;
+  color: #2c2825;
+}
+
+.hljs-github {
+  /*background-color: #f9bf07;
+  */
+  color: #2c2825;
+}
+
+.nobullet ul li {
+  list-style-type: none;
+}
+
+.icon img {
+  height: 1em;
+}
+
+.inverse {
+  background-color: #4fbff0;
+  color: #2c2825;
+  background-image: url(../img/white_ribbon2.png);
+
+}
+
+/* Text slide (default) */
+
+.remark-slide-content {
+  background-color: #FFFFFF;          /* white background */
+  background-repeat: no-repeat;
+  color: #2c2825;                     /* black text */
+  border-bottom: 40px solid #4fbff0;  /* blue bottom border */
+  font-size: 40px;                    /* regular text size */
+  padding: 0 60px 0 60px;             /* space on top, left, right, bottom*/
+}
+/*
+.remark-slide-container{
+
+}
+*/
+.remark-slide .bsol tbody tr:nth-child(odd) {
+  background-color: #fce59b;
+}
+
+.remark-slide .inverse tr:nth-child(even) {
+  background-color: #4f5458;
+}
+
+.remark-slide .inverse thead,
+.remark-slide .inverse tfoot,
+.remark-slide .inverse tr:nth-child(odd) {
+  background-color: #333739;
+}
+
+.inverse h1,
+.inverse h2,
+.inverse h3,
+.inverse h4,
+.inverse h5,
+.inverse h6 {
+  color: #FFFFFF;
+}
+
+.title-slide {
+  background-color: #FFFFFF;
+  text-shadow: none;
+  font-family: "Arial";
+  background-image: url(../img/slide_cover.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: start;
+  border-bottom: 0px solid #4fbff0;  /* blue bottom border */
+}
+
+  /*
+
+  background:
+		linear-gradient(90deg, #f9bf07 21px, transparent 1%) center,
+		linear-gradient(#f9bf07 21px, transparent 1%) center,
+		#2c2825;
+	background-size: 22px 22px;
+
+	*/
+
+
+.remark-slide h1 { font-size: 1.75em; }
+.remark-slide h2 { font-size: 1.50em; }
+.remark-slide h3 { font-size: 1.25em; }
+.remark-slide h4 { font-size: 1.10em; }
+.remark-slide h5, h6 { font-size: 1.10em ; }
+
+.title-slide h1,
+.title-slide h2,
+.title-slide h3,
+.title-slide h4,
+.title-slide h5,
+.title-slide h6 {
+  color: #2c2825;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  align-content: start;
+  padding-top: 50px;
+}
+
+.title-slide h1 {
+  font-size: 66pt;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.title-slide h1 {
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.small {
+  font-size: 70%;
+}
+
+.tiny {
+  font-size: 50%;
+}
+
+a {
+  color: #0000EE;
+}

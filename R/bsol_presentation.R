@@ -20,9 +20,14 @@
 bsol_presentation <- function(...) {
 
   # get the locations of resource files located within the package
-  css <- system.file("rmarkdown/templates/bsol-presentation",
+  css <- system.file("rmarkdown/templates/bsol-presentation/skeleton/css",
     "bsol_xaringan.css",
     package = "BSOLTheme"
+  )
+
+  logo <- system.file("rmarkdown/templates/bsol-presentation/skeleton/css",
+                     "insert-logo.html",
+                     package = "BSOLTheme"
   )
 
   # call the base word_document function
@@ -35,6 +40,7 @@ bsol_presentation <- function(...) {
       countIncrementalSlides = FALSE,
       highlightStyle = "github"
     ),
+    includes = list(after_body = logo),
     ...
   )
 }

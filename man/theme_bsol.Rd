@@ -4,7 +4,7 @@
 \alias{theme_bsol}
 \title{Creates the BSOL Theme for ggplot}
 \usage{
-theme_bsol(base_family = "Arial Bold")
+theme_bsol(base_family = "Arial")
 }
 \arguments{
 \item{base_family}{The font to use in this theme}
