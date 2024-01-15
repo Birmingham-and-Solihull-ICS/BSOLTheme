@@ -1,6 +1,19 @@
 # global variables are defined in this file. the file has been named such that
 # it will be executed before any other file
 
+
+# global variables are defined in this file. the file has been named such that
+# it will be executed before any other file
+.onLoad <- function(libname, pkgname){
+
+  sysfonts::font_add("Arial", "C:\\WINDOWS\\Fonts\\arial.ttf" )
+  showtext::showtext_auto()
+}
+
+
+
+
+
 # BSOL Colours Vector
 #
 # The colours that are used in the BSOLTheme. Non-exported (used by
