@@ -22,7 +22,8 @@ Imports:
     usethis,
     xaringan (>= 0.14),
     showtext,
-    sysfonts
+    sysfonts,
+    plotly
 Suggests: 
     covr (>= 3.3.2),
     dplyr (>= 0.8.3),
