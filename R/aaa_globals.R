@@ -6,8 +6,13 @@
 # it will be executed before any other file
 .onLoad <- function(libname, pkgname){
 
-  sysfonts::font_add("Arial", "C:\\WINDOWS\\Fonts\\arial.ttf" )
-  showtext::showtext_auto()
+  #extrafont::font_import()
+  suppressMessages({
+  extrafont::loadfonts(device = "win")
+  })
+
+  #sysfonts::font_add("Arial", "C:\\WINDOWS\\Fonts\\arial.ttf" )
+  #showtext::showtext_auto()
 }
 
 

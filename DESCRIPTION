@@ -21,8 +21,7 @@ Imports:
     rmarkdown (>= 2.1),
     usethis,
     xaringan (>= 0.14),
-    showtext,
-    sysfonts,
+    extrafont,
     plotly
 Suggests: 
     covr (>= 3.3.2),

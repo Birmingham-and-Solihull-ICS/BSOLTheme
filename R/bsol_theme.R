@@ -21,8 +21,13 @@ theme_bsol <- function(base_family = "Arial") {
     theme(
       panel.background = element_blank(),
       panel.grid = element_blank(),
+      plot.title = element_text(face="bold", size = 16),
+      plot.subtitle = element_text(face="italic",size = 10),
       axis.line = element_line(colour = bsol_theme_cols("charcoal"), linewidth = 0.75),
-      strip.background = element_rect(fill = bsol_theme_cols("light_slate"))#,
-      #panel.grid.major.y = element_line(colour = bsol_theme_cols("light_slate"), linewidth = 0.4)
+      strip.background = element_rect(fill = bsol_theme_cols("light_slate")),
+      panel.grid.major = element_line(colour = "#b3b3b3", linewidth = 0.4),
+      panel.grid.minor = element_line(colour = "#cfcfcf", linewidth = 0.4),
+
+
       )
 }
