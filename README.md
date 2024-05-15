@@ -1,4 +1,4 @@
-# BSOLTheme <img src="https://www.birminghamsolihull.icb.nhs.uk/application/files/1316/5651/5354/logo_full_colour_main_lockup.svg" align="right" width="100px"/>
+# BSOLTheme <img src="https://www.birminghamsolihull.icb.nhs.uk/application/files/1316/5651/5354/logo_full_colour_main_lockup.svg" align="right" width="300px"/>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/Birmingham-and-Solihull-ICS/BSOLTheme/workflows/R-CMD-check/badge.svg)](https://github.com/Birmingham-and-Solihull-ICS/BSOL/actions)
