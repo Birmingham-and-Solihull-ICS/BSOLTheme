@@ -6,10 +6,17 @@
 # it will be executed before any other file
 .onLoad <- function(libname, pkgname){
 
+  sysfonts::font_paths()
+  sysfonts::font_add_google("Open Sans", "Open Sans")
+  sysfonts::font_add("Arial", "arial.ttf", "arialbd.ttf", "ariali.ttf", "arialbi.ttf")
+  sysfonts::font_add("Calibri", "calibri.ttf", "calibrib.ttf", "calibrii.ttf", "calibriz.ttf")
+  sysfonts::font_add("Segoe UI", "segoeui.ttf", "segoeuib.ttf", "segoeuii.ttf", "segoeuiz.ttf")
+  showtext::showtext_auto()
+
   #extrafont::font_import()
-  suppressMessages({
-  extrafont::loadfonts(device = "win")
-  })
+  # suppressMessages({
+  # extrafont::loadfonts(device = "win")
+  # })
 
   #sysfonts::font_add("Arial", "C:\\WINDOWS\\Fonts\\arial.ttf" )
   #showtext::showtext_auto()
